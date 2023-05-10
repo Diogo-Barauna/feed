@@ -10,6 +10,18 @@ export default function App() {
           style={styles.logo}
         />
       </View>
+      <View  style={styles.stories}>
+        <View style={styles.newStorie}>
+          <Image
+            source={require('./assets/newStorie.png')}
+            style={styles.logo}
+          />
+          <p style={styles.newStorieTxt}>Seu story</p>
+        </View>
+      </View>
+      <View style={styles.hrContainer}>
+        <p style={styles.hr}>________________________________________________</p>
+      </View>
       <View style={styles.icon1Container}>
         <Image
           source={require('./assets/icon1.png')}
@@ -51,6 +63,35 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  stories: {
+    top: 60,
+    position: 'absolute',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  newStorie: {
+    position: 'absolute',
+    top: -15,
+    right: 90,
+    transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }], 
+  },
+  newStorieTxt: {
+    color: 'white',
+    position:'absolute',
+    top: 40, 
+    left: 35, 
+    fontSize: 10,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+  },
+  hrContainer: {
+    right: 380,
+    top: 85,
+    position: 'absolute',
+  },
+  hr: {
+    color: '#1F1F1F',
+    position: 'absolute',    
+  },
   icon1Container:{
     position: 'absolute',
     top: 125,
@@ -65,7 +106,7 @@ const styles = StyleSheet.create({
   icon1Desc: {
     color: '#F4F4F4',
     position: 'absolute',
-    bottom: 505,
+    top: 110,
     right: 265,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
   },
@@ -91,7 +132,7 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute',
-    top: 10,
+    top: 1,
     left: 10,
     alignItems: 'center',
     justifyContent: 'flex-start',
@@ -109,7 +150,6 @@ const styles = StyleSheet.create({
     width: 375,
     top: 310,
     bottom: 0,
-
   },
   profileFooter: {
     resizeMode: "contain",
