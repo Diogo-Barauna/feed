@@ -9,7 +9,7 @@ export default function App() {
       </View>
       <View style={styles.imageContainer}>
         <Image
-          source={require('./img.jpg')}
+          source={require('./assets/img.jpg')}
           style={styles.image}
         />
       </View>
@@ -20,33 +20,30 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    marginLeft: '265px',
-    marginTop:'20px',
-    width: '200px',
-    height: '350px',
+    flex: 1,
+    width: '375px',
+    height: '667px',
     border: 'solid',
-    borderRadius: '10px',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   imageContainer: {
     position: 'absolute',
-    top: 80,
-    left: 0,
+    top: 115,
     alignItems: 'center',
     justifyContent: 'center',
   },
   textContainer: {
     position: 'absolute',
     top: 10,
-    left: 70,
+    left: 10,
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
   image: {
-    width: 198,
-    height: 170,
+    width: 370,
+    height: 500,
   },
   logo: {
     fontSize: 13,
