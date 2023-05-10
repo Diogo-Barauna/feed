@@ -18,6 +18,13 @@ export default function App() {
           />
           <p style={styles.newStorieTxt}>Seu story</p>
         </View>
+        <View style={styles.story1}>
+          <Image
+            source={require('./assets/story1.png')}
+            style={styles.logo}
+          />
+          <p style={styles.story1Txt}>carloshenriqueovn</p>
+        </View>
       </View>
       <View style={styles.hrContainer}>
         <p style={styles.hr}>________________________________________________</p>
@@ -79,7 +86,21 @@ const styles = StyleSheet.create({
     color: 'white',
     position:'absolute',
     top: 40, 
-    left: 35, 
+    left: 36, 
+    fontSize: 10,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+  },
+  story1: {
+    position: 'absolute',
+    top: -15,
+    right: 2,
+    transform: [{ scaleX: 1.3 }, { scaleY: 1.3 }], 
+  },
+  story1Txt: {
+    color: 'white',
+    position:'absolute',
+    top: 37, 
+    left: 19, 
     fontSize: 10,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
   },
