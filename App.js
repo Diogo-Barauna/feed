@@ -14,16 +14,37 @@ export default function App() {
         <View style={styles.newStorie}>
           <Image
             source={require('./assets/newStorie.png')}
-            style={styles.logo}
+            style={styles.newStorie}
           />
           <p style={styles.newStorieTxt}>Seu story</p>
         </View>
         <View style={styles.story1}>
           <Image
             source={require('./assets/story1.png')}
-            style={styles.logo}
+            style={styles.story1}
           />
-          <p style={styles.story1Txt}>carloshenriqueovn</p>
+          <p style={styles.story1Txt}>carloshenrique2</p>
+        </View>
+        <View style={styles.story2}>
+          <Image
+            source={require('./assets/story2.png')}
+            style={styles.story2}
+          />
+          <p style={styles.story2Txt}>emanuel.pedro</p>
+        </View>
+        <View style={styles.story3}>
+          <Image
+            source={require('./assets/story3.png')}
+            style={styles.story3}
+          />
+          <p style={styles.story3Txt}>sam.henrik</p>
+        </View>
+        <View style={styles.story4}>
+          <Image
+            source={require('./assets/story4.png')}
+            style={styles.story4}
+          />
+          <p style={styles.story4Txt}>marll</p>
         </View>
       </View>
       <View style={styles.hrContainer}>
@@ -78,30 +99,82 @@ const styles = StyleSheet.create({
   },
   newStorie: {
     position: 'absolute',
-    top: -15,
-    right: 90,
-    transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }], 
+    resizeMode: "contain",
+    top: -13,
+    right: 45,
+    width: 100,
+    height: 65,
   },
   newStorieTxt: {
     color: 'white',
     position:'absolute',
-    top: 40, 
-    left: 36, 
-    fontSize: 10,
+    top: 42, 
+    left: -17, 
+    fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
   },
   story1: {
     position: 'absolute',
-    top: -15,
-    right: 2,
-    transform: [{ scaleX: 1.3 }, { scaleY: 1.3 }], 
+    resizeMode: "contain",
+    top: -13,
+    right: 3,
+    width: 100,
+    height: 65,
   },
   story1Txt: {
     color: 'white',
     position:'absolute',
-    top: 37, 
-    left: 19, 
-    fontSize: 10,
+    top: 42, 
+    left: 7, 
+    fontSize: 12,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+  },
+  story2: {
+    position: 'absolute',
+    resizeMode: "contain",
+    top: -13,
+    left: -11,
+    width: 100,
+    height: 65,
+  },
+  story2Txt: {
+    color: 'white',
+    position:'absolute',
+    top: 42, 
+    left: 2, 
+    fontSize: 12,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+  },
+  story3: {
+    position: 'absolute',
+    resizeMode: "contain",
+    top: -13,
+    left: 30,
+    width: 100,
+    height: 65,
+  },
+  story3Txt: {
+    color: 'white',
+    position:'absolute',
+    top: 42, 
+    left: 51, 
+    fontSize: 12,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+  },
+  story4: {
+    position: 'absolute',
+    resizeMode: "contain",
+    top: -13,
+    left: 62,
+    width: 100,
+    height: 65,
+  },
+  story4Txt: {
+    color: 'white',
+    position:'absolute',
+    top: 42, 
+    left: 100, 
+    fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
   },
   hrContainer: {
@@ -153,7 +226,7 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute',
-    top: 1,
+    top: -5,
     left: 10,
     alignItems: 'center',
     justifyContent: 'flex-start',
