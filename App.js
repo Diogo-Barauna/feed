@@ -79,6 +79,22 @@ export default function App() {
           source={require('./assets/perfil.png')}
           style={styles.profileFooter}
         />
+        <Image
+          source={require('./assets/home.png')}
+          style={styles.homeFooter}
+        />
+         <Image
+          source={require('./assets/search.png')}
+          style={styles.searchFooter}
+        />
+         <Image
+          source={require('./assets/plus.png')}
+          style={styles.plusFooter}
+        />
+        <Image
+          source={require('./assets/heart.png')}
+          style={styles.heartFooter}
+        />
       </View>
       <StatusBar style="auto"/>
     </View>
@@ -258,9 +274,43 @@ const styles = StyleSheet.create({
     bottom: 0,
   },
   profileFooter: {
+    position: 'absolute',
     resizeMode: "contain",
     width: 50,
     height: 30,
-    left: 310
+    left: 310,
+    bottom: -13
+  },
+  homeFooter: {
+    position: 'absolute',
+    resizeMode: "contain",
+    width: 50,
+    height: 30,
+    left: 13,
+    bottom: -13
+  },
+  searchFooter: {
+    position: 'absolute',
+    resizeMode: "contain",
+    width: 50,
+    height: 25,
+    left: 87,
+    bottom: -11
+  },
+  plusFooter: {
+    position: 'absolute',
+    width: 50,
+    height: 25,
+    transform: [{ scaleX: 1.4 }, { scaleY: 1.4 }],
+    left: 160,
+    bottom: -11
+  },
+  heartFooter: {
+    position: 'absolute',
+    resizeMode: "contain",
+    width: 50,
+    height: 25,
+    left: 236,
+    bottom: -11
   }
 });
