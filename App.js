@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     position: 'absolute',
-    top: 115,
+    top: 165,
   },
   logoContainer: {
     position: 'absolute',
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 372,
-    height: 500,
+    height: 450,
   },
   logo: {
     resizeMode: "contain",
