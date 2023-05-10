@@ -4,8 +4,11 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.textContainer}>
-        <Text style={styles.logo}>Instagram</Text>
+      <View style={styles.logoContainer}>
+        <Image
+          source={require('./assets/logo.png')}
+          style={styles.logo}
+        />
       </View>
       <View style={styles.imageContainer}>
         <Image
@@ -24,17 +27,15 @@ const styles = StyleSheet.create({
     width: '375px',
     height: '667px',
     border: 'solid',
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
   },
   imageContainer: {
     position: 'absolute',
     top: 115,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-  textContainer: {
+  logoContainer: {
     position: 'absolute',
     top: 10,
     left: 10,
@@ -42,11 +43,12 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   image: {
-    width: 370,
+    width: 372,
     height: 500,
   },
   logo: {
-    fontSize: 13,
-    fontStyle: 'italic',
+    resizeMode: "contain",
+    width: 110,
+    height: 50  
   },
 });
