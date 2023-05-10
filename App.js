@@ -9,6 +9,10 @@ export default function App() {
           source={require('./assets/logo.png')}
           style={styles.logo}
         />
+         <Image
+          source={require('./assets/message.png')}
+          style={styles.message}
+        />
       </View>
       <View  style={styles.stories}>
         <View style={styles.newStorie}>
@@ -239,6 +243,14 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
     width: 110,
     height: 50  
+  },
+  message: {
+    position: 'absolute',
+    resizeMode: "contain",
+    width: 110,
+    height: 25 ,
+    left: 276,
+    top: 10
   },
   footer :{
     width: 375,
