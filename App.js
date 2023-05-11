@@ -4,12 +4,14 @@ import { StyleSheet, Text, View, Image} from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.logoContainer}>
+      <View style={styles.logoContainer}> 
         <Image
+          // Imagem da logo instagram 
           source={require('./assets/logo.png')}
           style={styles.logo}
         />
          <Image
+          // Imagem do balão de chat (parte superior direita)
           source={require('./assets/message.png')}
           style={styles.message}
         />
@@ -17,6 +19,7 @@ export default function App() {
       <View  style={styles.stories}>
         <View style={styles.newStorie}>
           <Image
+            // Imagem 'seu story'
             source={require('./assets/newStorie.png')}
             style={styles.newStorie}
           />
@@ -24,9 +27,11 @@ export default function App() {
         </View>
         <View style={styles.story1}>
           <Image
+            // Imagem do primeiro story
             source={require('./assets/story1.png')}
             style={styles.story1}
           />
+           {/* Texto do primeiro story */}
           <p style={styles.story1Txt}>carloshenriq...</p>
         </View>
         <View style={styles.story2}>
@@ -51,29 +56,35 @@ export default function App() {
           <p style={styles.story4Txt}>marll</p>
         </View>
       </View>
+       {/* Fazendo a simulação de um <hr> */}
       <View style={styles.hrContainer}>
         <p style={styles.hr}>________________________________________________</p>
       </View>
+       {/* Inserindo a foto de perfil de quem postou a foto principal */}
       <View style={styles.icon1Container}>
         <Image
           source={require('./assets/icon1.png')}
           style={styles.icon1}
         />
       </View>
+       {/* Inserindo o nome de usuário de quem postou a foto principal */}
       <View style={styles.icon1Desc}>
         <p style={styles.p1}>• Camila •</p>
         <p style={styles.p2}>mahinazul</p>
         <Image
+          // Inserindo a imagem dos 3 pontos verticais
           source={require('./assets/pontos.png')}
           style={styles.dots}
         />
       </View>
+       {/* Inserindo a foto postada exibida no feed */}
       <View style={styles.imageContainer}>
         <Image
           source={require('./assets/img.jpg')}
           style={styles.image}
         />
       </View>
+       {/* Inserindo o footer e seus elementos */}
       <View style={styles.footer}>
         <Image
           source={require('./assets/perfil.png')}
@@ -102,6 +113,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  // Estilização do conteiner principal
   container: {
     flex: 1,
     width: 375,
@@ -111,12 +123,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  // Estilização da seção de stories
   stories: {
     top: 60,
     position: 'absolute',
     flexDirection: 'row',
     alignItems: 'center',
   },
+  // Imagem do story
   newStorie: {
     position: 'absolute',
     resizeMode: "contain",
@@ -125,6 +139,7 @@ const styles = StyleSheet.create({
     width: 100,
     height: 73,
   },
+  // Texto do story
   newStorieTxt: {
     color: '#E5E5E5',
     position:'absolute',
@@ -200,6 +215,7 @@ const styles = StyleSheet.create({
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
    
   },
+  // Estilização do 'hr' abaixo dos stories
   hrContainer: {
     right: 380,
     top: 132,
@@ -209,6 +225,7 @@ const styles = StyleSheet.create({
     color: '#1F1F1F',
     position: 'absolute',    
   },
+  // Estilização da foto de perfil da pessoa que postou a imagem
   icon1Container:{
     position: 'absolute',
     top: 175,
@@ -220,6 +237,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 30,
   },
+  // Nome de usuário da pessoa que postou
   icon1Desc: {
     color: '#F4F4F4',
     position: 'absolute',
@@ -238,6 +256,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 15
   },
+  // Estilização dos 3 pontos verticais na direita 
   dots: {
     position:'absolute',
     resizeMode: "contain",
@@ -246,27 +265,30 @@ const styles = StyleSheet.create({
     width: 50,
     height: 16,
   },
+  // Estilização da imagem postada
   imageContainer: {
     position: 'absolute',
     top: 165,
-  },
-  logoContainer: {
-    position: 'absolute',
-    top: 2,
-    left: 9,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
   },
   image: {
     top:50,
     width: 375,
     height: 400,
   },
+  // Estilização do logo do instagram no lado superior esquerdo
+   logoContainer: {
+    position: 'absolute',
+    top: 2,
+    left: 9,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
   logo: {
     resizeMode: "contain",
     width: 110,
     height: 50  
   },
+  // Estilização do ícone de mensagem no lado superior direito
   message: {
     position: 'absolute',
     resizeMode: "contain",
@@ -275,11 +297,13 @@ const styles = StyleSheet.create({
     left: 276,
     top: 9
   },
+  // Estilização do footer e seus icones
   footer :{
     width: 375,
     top: 310,
     bottom: 0,
   },
+  // Foto de perfil do footer
   profileFooter: {
     position: 'absolute',
     resizeMode: "contain",
