@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
   newStorie: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -13,
+    top: -5,
     right: 45,
     width: 100,
     height: 65,
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
   newStorieTxt: {
     color: 'white',
     position:'absolute',
-    top: 42, 
+    top: 51, 
     left: -17, 
     fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   story1: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -13,
+    top: -5,
     right: 3,
     width: 100,
     height: 65,
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
   story1Txt: {
     color: 'white',
     position:'absolute',
-    top: 42, 
+    top: 51, 
     left: 7, 
     fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   story2: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -13,
+    top: -5,
     left: -11,
     width: 100,
     height: 65,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
   story2Txt: {
     color: 'white',
     position:'absolute',
-    top: 42, 
+    top: 51, 
     left: 2, 
     fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   story3: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -13,
+    top: -5,
     left: 30,
     width: 100,
     height: 65,
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
   story3Txt: {
     color: 'white',
     position:'absolute',
-    top: 42, 
+    top: 51, 
     left: 51, 
     fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
   story4: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -13,
+    top: -5,
     left: 62,
     width: 100,
     height: 65,
@@ -192,14 +192,14 @@ const styles = StyleSheet.create({
   story4Txt: {
     color: 'white',
     position:'absolute',
-    top: 42, 
+    top: 51, 
     left: 100, 
     fontSize: 12,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
   },
   hrContainer: {
     right: 380,
-    top: 85,
+    top: 102,
     position: 'absolute',
   },
   hr: {
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
   },
   icon1Container:{
     position: 'absolute',
-    top: 125,
+    top: 145,
     right: 375 
   },
   icon1: {
@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
   icon1Desc: {
     color: '#F4F4F4',
     position: 'absolute',
-    top: 110,
+    top: 129,
     right: 265,
     fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
   },
@@ -246,14 +246,15 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute',
-    top: -5,
-    left: 10,
+    top: 2,
+    left: 9,
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
   image: {
+    top:20,
     width: 375,
-    height: 450,
+    height: 430,
   },
   logo: {
     resizeMode: "contain",
@@ -266,7 +267,7 @@ const styles = StyleSheet.create({
     width: 110,
     height: 25 ,
     left: 276,
-    top: 10
+    top: 9
   },
   footer :{
     width: 375,
