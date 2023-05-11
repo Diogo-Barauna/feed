@@ -27,14 +27,14 @@ export default function App() {
             source={require('./assets/story1.png')}
             style={styles.story1}
           />
-          <p style={styles.story1Txt}>carloshenrique2</p>
+          <p style={styles.story1Txt}>carloshenriq...</p>
         </View>
         <View style={styles.story2}>
           <Image
             source={require('./assets/story2.png')}
             style={styles.story2}
           />
-          <p style={styles.story2Txt}>emanuel.pedro</p>
+          <p style={styles.story2Txt}>emanuel.ped...</p>
         </View>
         <View style={styles.story3}>
           <Image
@@ -120,86 +120,89 @@ const styles = StyleSheet.create({
   newStorie: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -5,
-    right: 45,
+    top: 1,
+    right: 41,
     width: 100,
-    height: 65,
+    height: 73,
   },
   newStorieTxt: {
-    color: 'white',
+    color: '#E5E5E5',
     position:'absolute',
-    top: 51, 
+    top: 68, 
     left: -17, 
-    fontSize: 12,
-    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+    fontSize: 13,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
   },
   story1: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -5,
-    right: 3,
+    top: 1,
+    right: -6,
     width: 100,
-    height: 65,
+    height:77,
   },
   story1Txt: {
-    color: 'white',
+    color: '#E5E5E5',
     position:'absolute',
-    top: 51, 
-    left: 7, 
-    fontSize: 12,
-    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+    top: 68, 
+    left: 18, 
+    fontSize: 13,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
   },
   story2: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -5,
-    left: -11,
+    top: 1,
+    left: 0,
     width: 100,
-    height: 65,
+    height: 77,
   },
   story2Txt: {
-    color: 'white',
+    color: '#E5E5E5',
     position:'absolute',
-    top: 51, 
-    left: 2, 
-    fontSize: 12,
-    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+    top: 68, 
+    left: 12, 
+    fontSize: 13,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
+    
   },
   story3: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -5,
-    left: 30,
+    top: 1,
+    left: 44,
     width: 100,
-    height: 65,
+    height: 77,
   },
   story3Txt: {
-    color: 'white',
+    color: '#E5E5E5',
     position:'absolute',
-    top: 51, 
-    left: 51, 
-    fontSize: 12,
-    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+    top: 68, 
+    left: 62, 
+    fontSize: 13,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
+   
   },
   story4: {
     position: 'absolute',
     resizeMode: "contain",
-    top: -5,
-    left: 62,
+    top: 1,
+    left: 76,
     width: 100,
-    height: 65,
+    height: 77,
   },
   story4Txt: {
-    color: 'white',
+    color: '#E5E5E5',
     position:'absolute',
-    top: 51, 
-    left: 100, 
-    fontSize: 12,
-    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+    top: 68, 
+    left: 106, 
+    fontSize: 13,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
+   
   },
   hrContainer: {
     right: 380,
-    top: 102,
+    top: 132,
     position: 'absolute',
   },
   hr: {
@@ -208,8 +211,8 @@ const styles = StyleSheet.create({
   },
   icon1Container:{
     position: 'absolute',
-    top: 145,
-    right: 375 
+    top: 175,
+    right: 372 
   },
   icon1: {
     position: 'absolute',
@@ -220,22 +223,25 @@ const styles = StyleSheet.create({
   icon1Desc: {
     color: '#F4F4F4',
     position: 'absolute',
-    top: 129,
-    right: 265,
-    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif"
+    top: 159,
+    right: 260,
+    fontFamily: "PT Sans, Calibri, Tahoma, sans-serif",
+    
   },
   p1: {
     position:'absolute',
     top: 18,
-    fontSize: 13
+    fontSize: 13,
+    color: '#E5E5E5',
   },
   p2: {
+    fontWeight: 'bold',
     fontSize: 15
   },
   dots: {
     position:'absolute',
     resizeMode: "contain",
-    left: 285,
+    left: 282,
     top: 23,
     width: 50,
     height: 16,
@@ -252,9 +258,9 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   image: {
-    top:20,
+    top:50,
     width: 375,
-    height: 430,
+    height: 400,
   },
   logo: {
     resizeMode: "contain",
